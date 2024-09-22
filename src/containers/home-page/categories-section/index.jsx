@@ -17,11 +17,11 @@ function Categories({ setSelectedGenre }) {
   return (
     <div className='flex flex-col gap-2 py-4'>
       <h2 className='text-3xl'>Genres</h2>
-      <div className='flex container-card'>
+      <div className='flex flex-wrap gap-3'>
         {genres?.genres?.map((genre) => (
           <button
             key={genre.id}
-            className=' bg-white text-black rounded-lg text-xl button'
+            className='py-2 px-6 bg-white text-black rounded-lg text-xl'
             onClick={() => setSelectedGenre(genre.id)}
           >
             {genre.name}
