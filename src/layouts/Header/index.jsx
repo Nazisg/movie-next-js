@@ -1,4 +1,4 @@
-'use client'; // This directive makes the component a Client Component
+'use client'; 
 
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
@@ -13,12 +13,12 @@ const Header = () => {
   ];
 
   return (
-    <header className="flex justify-between items-center text-xl py-6">
+    <header className="flex justify-between items-center text-xl py-6 between">
       <Link href="/" className="flex gap-2 items-center">
-        <PlayIcon className="w-7 h-7 fill-white"/>
+        <PlayIcon  className="w-7 h-7 fill-white icon"/>
         NETFILMS
       </Link>
-      <nav className="flex gap-5">
+      <nav className="flex gap-5 container-card">
         {navItems.map(({ name, href }) => (
           <Link
             key={name}

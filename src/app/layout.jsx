@@ -1,10 +1,10 @@
 "use client"
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import { inter } from "@/libs/font";
+import Header from "@/layouts/Header";
+import Footer from "@/layouts/Footer";
 import '@/styles/reset.scss'
 import '@/styles/global.scss';
-import { useState } from 'react'; 
+import { useState } from 'react';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';

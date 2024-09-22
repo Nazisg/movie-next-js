@@ -22,7 +22,7 @@ function Movies({ genreId }) {
   if (error) return <ErrorMessage message={`Error fetching movies: ${error.message}`} />; 
 
   return (
-    <div className="flex gap-2 flex-wrap container-card ">
+    <div className="flex gap-2 flex-wrap container-card py">
       {movies?.results?.map((movie) => (
         <div key={movie.id} className='flex card flex-col gap-2border border-[#262626] bg-[#1A1A1A] rounded-xl p-4'>
           <Link href={`/movie/${movie.id}`}>
