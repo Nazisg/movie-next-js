@@ -13,12 +13,12 @@ const Header = () => {
   ];
 
   return (
-    <header className="flex justify-between items-center text-xl py-6 between">
-      <Link href="/" className="flex gap-2 items-center">
-        <PlayIcon  className="w-7 h-7 fill-white icon"/>
+    <header className="flex justify-between items-center text-xl py-6">
+      <Link href="/" className="flex gap-1 items-center justify-center">
+        <PlayIcon  className="w-8 h-8 fill-white"/>
         NETFILMS
       </Link>
-      <nav className="flex gap-5 container-card">
+      <nav className="flex gap-5">
         {navItems.map(({ name, href }) => (
           <Link
             key={name}

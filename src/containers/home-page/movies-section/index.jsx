@@ -22,7 +22,7 @@ function Movies({ genreId }) {
   if (error) return <ErrorMessage message={`Error fetching movies: ${error.message}`} />; 
 
   return (
-    <div className="p-4 grid grid-cols-1 gap-4 min-[500px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+    <div className="grid grid-cols-1 gap-4 min-[500px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
     {movies?.results?.map((movie) => (
       <div key={movie.id} className="w-full flex flex-col gap-1 border border-[#262626] bg-[#1A1A1A] p-4 rounded-xl">
         <Link href={`/movie/${movie.id}`}>
